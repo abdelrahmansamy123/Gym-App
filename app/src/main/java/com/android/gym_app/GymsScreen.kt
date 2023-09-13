@@ -22,22 +22,11 @@ import com.android.gym_app.ui.theme.Gym_AppTheme
 
 @Composable
 fun GymsScreen() {
-    //Lazy Column
     LazyColumn() {
         items(listOfGyms) {
             GymItem(it)
         }
     }
-
-
-    //Column Iteration
-//    Column(Modifier.verticalScroll(rememberScrollState())) {
-//        listOfGyms.forEach {
-//            GymItem(it)
-//        }
-//
-//    }
-
 }
 
 @Composable
