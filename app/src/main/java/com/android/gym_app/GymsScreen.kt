@@ -75,16 +75,13 @@ fun DefaultIcon(
 fun GymDetails(gym: Gym, modifier: Modifier) {
     Column(modifier = modifier) {
         Text(
-            text = gym.name,
-            style = MaterialTheme.typography.h6,
-            color = Color.Blue
+            text = gym.name, style = MaterialTheme.typography.h6, color = Color.Blue
         )
         CompositionLocalProvider(
             LocalContentAlpha provides ContentAlpha.medium
         ) {
             Text(
-                gym.place,
-                style = MaterialTheme.typography.body2
+                gym.place, style = MaterialTheme.typography.body2
             )
         }
     }
